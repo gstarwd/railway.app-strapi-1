@@ -1,4 +1,12 @@
+import fs from 'fs';
 import path from 'path';
+
+const resolveSqliteFilename = (env) => {
+  const filename = env('DATABASE_FILENAME', '.tmp/data.db');
+  const resolved = path.resolve(process.cwd(), filename);
+  fs.mkdirSync(path.dirname(resolved), { recursive: true });
+  return resolved;
+};
 
 export default ({ env }) => {
   const client = env('DATABASE_CLIENT', 'sqlite');
@@ -44,7 +52,7 @@ export default ({ env }) => {
     },
     sqlite: {
       connection: {
-        filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+        filename: resolveSqliteFilename(env),
       },
       useNullAsDefault: true,
     },

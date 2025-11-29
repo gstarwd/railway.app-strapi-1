@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authers",
+  "info": {
+    "singularName": "auther",
+    "pluralName": "authers",
+    "displayName": "auther",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
