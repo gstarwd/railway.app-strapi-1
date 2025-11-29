@@ -2,7 +2,7 @@
 
 <img width="361" height="394" alt="image" src="https://github.com/user-attachments/assets/79514689-0e96-4d93-a6e9-80a7d3ec5d23" />
 auther:
-```
+ 
 {
   "kind": "collectionType",
   "collectionName": "authers",
@@ -32,11 +32,11 @@ auther:
   }
 }
 
-```
+ 
 
 
 category
-```
+ 
 {
   "kind": "collectionType",
   "collectionName": "categories",
@@ -62,10 +62,10 @@ category
   }
 }
 
-```
+ 
 
 post:
-```
+ 
 {
   "kind": "collectionType",
   "collectionName": "posts",
@@ -113,7 +113,7 @@ post:
   }
 }
 
-```
+ 
 
 
 # 🚀 Getting started with Strapi
