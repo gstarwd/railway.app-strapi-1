@@ -109,6 +109,9 @@ post:
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "site": {
+      "type": "string"
     }
   }
 }
