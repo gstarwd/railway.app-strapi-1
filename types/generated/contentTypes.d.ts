@@ -443,10 +443,20 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
   attributes: {
     auther: Schema.Attribute.Relation<'oneToOne', 'api::auther.auther'>;
     category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
-    content: Schema.Attribute.Blocks;
+    content_blocks: Schema.Attribute.DynamicZone<
+      [
+        'rich-text.rich-text',
+        'image.image',
+        'code.code',
+        'youtube-video.youtube-video',
+        'table.htmltable',
+      ]
+    > &
+      Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
     featured_image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

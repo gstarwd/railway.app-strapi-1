@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_code_codes",
+  "info": {
+    "displayName": "code",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "text"
+    }
+  }
+}

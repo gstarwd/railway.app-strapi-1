@@ -18,9 +18,6 @@
       "type": "uid",
       "targetField": "title"
     },
-    "content": {
-      "type": "blocks"
-    },
     "featured_image": {
       "type": "media",
       "multiple": false,
@@ -46,6 +43,21 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::site.site"
+    },
+    "content_blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "rich-text.rich-text",
+        "image.image",
+        "code.code",
+        "youtube-video.youtube-video",
+        "table.htmltable"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }

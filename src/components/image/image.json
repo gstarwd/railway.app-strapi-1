@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_image_images",
+  "info": {
+    "displayName": "image",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
