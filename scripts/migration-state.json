@@ -1,0 +1,26 @@
+{
+  "migration_id": "migration-2025-12-23T13-10-39-423Z",
+  "start_time": "2025-12-23T13:10:39.423Z",
+  "end_time": "2025-12-23T13:10:44.472Z",
+  "status": "completed",
+  "statistics": {
+    "total_files": 1,
+    "processed": 1,
+    "success": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "processed_files": [
+    {
+      "id": 1,
+      "status": "success",
+      "original_url": "https://res.cloudinary.com/dnxzgd1kn/image/upload/v1764550860/i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+      "new_url": "https://z-image.73c1c6d43f646c715196b816671b19b9.r2.cloudflarestorage.com/i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+      "file_size": 109.81,
+      "upload_duration_ms": 5046,
+      "timestamp": "2025-12-23T13:10:44.472Z"
+    }
+  ],
+  "failed_files": [],
+  "skipped_files": []
+}

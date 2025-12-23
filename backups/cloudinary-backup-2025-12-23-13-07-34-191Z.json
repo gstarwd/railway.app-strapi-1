@@ -1,0 +1,97 @@
+{
+  "backup_metadata": {
+    "backup_date": "2025-12-23T13:07:34.191Z",
+    "database_type": "sqlite",
+    "strapi_version": "5.11.3",
+    "total_files": 1
+  },
+  "files": [
+    {
+      "id": 1,
+      "name": "iShot_2025-11-29_08.27.24.webp",
+      "alternativeText": null,
+      "caption": null,
+      "width": 2494,
+      "height": 1550,
+      "hash": "i_Shot_2025_11_29_08_27_24_a51fc40734",
+      "ext": ".webp",
+      "mime": "image/webp",
+      "size": 109.81,
+      "url": "https://res.cloudinary.com/dnxzgd1kn/image/upload/v1764550860/i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_iShot_2025-11-29_08.27.24.webp",
+          "hash": "thumbnail_i_Shot_2025_11_29_08_27_24_a51fc40734",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "path": null,
+          "width": 245,
+          "height": 152,
+          "size": 6.49,
+          "sizeInBytes": 6492,
+          "url": "https://res.cloudinary.com/dnxzgd1kn/image/upload/v1764550859/thumbnail_i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+          "provider_metadata": {
+            "public_id": "thumbnail_i_Shot_2025_11_29_08_27_24_a51fc40734",
+            "resource_type": "image"
+          }
+        },
+        "large": {
+          "name": "large_iShot_2025-11-29_08.27.24.webp",
+          "hash": "large_i_Shot_2025_11_29_08_27_24_a51fc40734",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "path": null,
+          "width": 1000,
+          "height": 621,
+          "size": 39.23,
+          "sizeInBytes": 39228,
+          "url": "https://res.cloudinary.com/dnxzgd1kn/image/upload/v1764550860/large_i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+          "provider_metadata": {
+            "public_id": "large_i_Shot_2025_11_29_08_27_24_a51fc40734",
+            "resource_type": "image"
+          }
+        },
+        "small": {
+          "name": "small_iShot_2025-11-29_08.27.24.webp",
+          "hash": "small_i_Shot_2025_11_29_08_27_24_a51fc40734",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "path": null,
+          "width": 500,
+          "height": 311,
+          "size": 16.05,
+          "sizeInBytes": 16054,
+          "url": "https://res.cloudinary.com/dnxzgd1kn/image/upload/v1764550860/small_i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+          "provider_metadata": {
+            "public_id": "small_i_Shot_2025_11_29_08_27_24_a51fc40734",
+            "resource_type": "image"
+          }
+        },
+        "medium": {
+          "name": "medium_iShot_2025-11-29_08.27.24.webp",
+          "hash": "medium_i_Shot_2025_11_29_08_27_24_a51fc40734",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "path": null,
+          "width": 750,
+          "height": 466,
+          "size": 27.17,
+          "sizeInBytes": 27168,
+          "url": "https://res.cloudinary.com/dnxzgd1kn/image/upload/v1764550860/medium_i_Shot_2025_11_29_08_27_24_a51fc40734.webp",
+          "provider_metadata": {
+            "public_id": "medium_i_Shot_2025_11_29_08_27_24_a51fc40734",
+            "resource_type": "image"
+          }
+        }
+      },
+      "provider": "cloudinary",
+      "provider_metadata": {
+        "public_id": "i_Shot_2025_11_29_08_27_24_a51fc40734",
+        "resource_type": "image"
+      },
+      "folderPath": "/",
+      "createdAt": 1764550862024,
+      "updatedAt": 1764550862024
+    }
+  ]
+}

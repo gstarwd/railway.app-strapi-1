@@ -1,0 +1,27 @@
+Cloudinary to R2 Migration - Backup Report
+==========================================
+
+Backup Date: 2025-12-23T13:07:34.192Z
+Database Type: sqlite
+
+Files Backed Up:
+  - Database: /Users/andy/Andy/1-Project/10b.ai-hub-astro/railway.app-strapi/backups/data.db.backup-2025-12-23-13-07-34-189Z
+  - JSON Export: /Users/andy/Andy/1-Project/10b.ai-hub-astro/railway.app-strapi/backups/cloudinary-backup-2025-12-23-13-07-34-191Z.json
+  - CSV Mapping: /Users/andy/Andy/1-Project/10b.ai-hub-astro/railway.app-strapi/backups/migration-mapping-2025-12-23-13-07-34-191Z.csv
+
+Statistics:
+  - Total Cloudinary Files: 1
+  - Total File Size: N/A
+
+Verification:
+  - Database backup exists: YES
+  - JSON backup exists: YES
+  - CSV backup exists: YES
+
+Status: COMPLETED
+
+Notes:
+- Keep these backups until migration is verified successful
+- Database backups can be used for full recovery
+- JSON backups contain all file metadata and can be used for partial recovery
+- CSV is useful for quick lookups and Excel analysis
