@@ -16,7 +16,17 @@ class DBHelper {
    * Initialize database connection
    */
   static async init(env = {}) {
-    const client = env.DATABASE_CLIENT || 'sqlite';
+    // Auto-detect database type from DATABASE_URL if DATABASE_CLIENT not set
+    let client = env.DATABASE_CLIENT;
+
+    if (!client) {
+      const dbUrl = env.DATABASE_PRIVATE_URL || env.DATABASE_URL;
+      if (dbUrl && dbUrl.startsWith('postgresql://')) {
+        client = 'postgres';
+      } else {
+        client = 'sqlite';
+      }
+    }
 
     if (client === 'sqlite') {
       const Database = require('better-sqlite3');
@@ -32,6 +42,10 @@ class DBHelper {
       const { Client } = require('pg');
       const connection = new Client({
         connectionString: env.DATABASE_PRIVATE_URL || env.DATABASE_URL,
+        connectionTimeoutMillis: 30000,
+        query_timeout: 60000,
+        statement_timeout: 60000,
+        idle_in_transaction_session_timeout: 60000,
       });
       await connection.connect();
       return new DBHelper('postgres', connection);
