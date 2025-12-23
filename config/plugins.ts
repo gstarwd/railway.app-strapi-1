@@ -8,16 +8,15 @@ export default ({ env }) => ({
         config: {
             provider: 'aws-s3',
             providerOptions: {
-                credentials: {
-                    accessKeyId: env('AWS_ACCESS_KEY_ID'),
-                    secretAccessKey: env('AWS_ACCESS_SECRET'),
-                },
+                accessKeyId: env('AWS_ACCESS_KEY_ID'),
+                secretAccessKey: env('AWS_ACCESS_SECRET'),
                 region: env('AWS_REGION', 'auto'),
                 params: {
                     Bucket: env('AWS_BUCKET'),
                 },
                 endpoint: env('AWS_ENDPOINT'),
                 s3ForcePathStyle: true,
+                signatureVersion: 'v4',
             },
             actionOptions: {
                 upload: {},
