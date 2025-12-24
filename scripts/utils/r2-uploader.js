@@ -20,6 +20,7 @@ class R2Uploader {
     });
     this.bucket = config.bucket;
     this.endpoint = config.endpoint;
+    this.publicUrl = config.publicUrl; // Custom domain for public access
   }
 
   /**
@@ -107,7 +108,11 @@ class R2Uploader {
    * @returns {string} - Public URL
    */
   getPublicUrl(key) {
-    // R2 public URL format
+    // Use custom domain if configured, otherwise fall back to R2 URL
+    if (this.publicUrl) {
+      return `${this.publicUrl}/${key}`;
+    }
+    // Fallback to R2 public URL format
     const accountId = this.extractAccountId();
     return `https://${this.bucket}.${accountId}.r2.cloudflarestorage.com/${key}`;
   }
@@ -134,6 +139,7 @@ class R2Uploader {
       region: env.AWS_REGION || 'auto',
       bucket: env.AWS_BUCKET,
       endpoint: env.AWS_ENDPOINT,
+      publicUrl: env.R2_PUBLIC_URL, // Custom domain, e.g., https://cdn.z-image.ai
     });
   }
 }
