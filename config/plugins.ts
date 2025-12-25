@@ -8,6 +8,7 @@ export default ({ env }) => ({
         config: {
             provider: 'aws-s3',
             providerOptions: {
+                baseUrl: env('R2_PUBLIC_URL'), // Custom domain for public URLs
                 credentials: {
                     accessKeyId: env('AWS_ACCESS_KEY_ID'),
                     secretAccessKey: env('AWS_ACCESS_SECRET'),
